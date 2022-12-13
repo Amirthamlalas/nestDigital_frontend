@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AdminComponent } from './admin/admin.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myconst:Routes=[
   {path:"",
@@ -14,7 +15,8 @@ component:AdminComponent}
 @NgModule({
   declarations: [
     AppComponent,
-    AdminComponent
+    AdminComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
