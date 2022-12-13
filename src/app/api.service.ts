@@ -18,4 +18,7 @@ export class ApiService {
  visitorLog=(DataToSend:any)=>{
     return this.http.post("http://localhost:8080/visitorlog",DataToSend)
   }
+  addEmployee=(DataToSend:any)=>{
+    return this.http.post("http://localhost:8080/addemployee",DataToSend)
+  }
 }
