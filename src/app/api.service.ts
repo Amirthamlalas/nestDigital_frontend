@@ -11,4 +11,7 @@ export class ApiService {
   addSecurity=(DataToSend:any)=>{
     return this.http.post("http://localhost:8080/addsecurity",DataToSend)
   }
+  securityLogin=(DataToSend:any)=>{
+    return this.http.post("http://localhost:8080/securitylogin",DataToSend)
+  }
 }
