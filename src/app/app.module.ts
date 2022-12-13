@@ -4,7 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AdminComponent } from './admin/admin.component';
+import { FormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
 
+const myconst:Routes=[
+  {path:"",
+component:AdminComponent}
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,7 +18,9 @@ import { AdminComponent } from './admin/admin.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    RouterModule.forRoot(myconst)
   ],
   providers: [],
   bootstrap: [AppComponent]
