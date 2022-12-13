@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+        
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Name</label>
+                    <input name="name" [(ngModel)]="name" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Purpose</label>
+                    <input name="purpose" [(ngModel)]="purpose" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Whom_tO_Meet</label>
+                    <input name="whom_to_meet" [(ngModel)]="whom_to_meet" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Entry Time</label>
+                    <input name="entry_time" [(ngModel)]="entry_time" type="time" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Exit Time</label>
+                    <input name="exit_time" [(ngModel)]="exit_time" type="time" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <button (click)="readValue()" class="btn btn-success">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
