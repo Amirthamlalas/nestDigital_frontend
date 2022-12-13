@@ -7,6 +7,7 @@ import { AdminComponent } from './admin/admin.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SecurityGuardComponent } from './security-guard/security-guard.component';
 
 const myconst:Routes=[
   {path:"",
@@ -16,7 +17,8 @@ component:AdminComponent}
   declarations: [
     AppComponent,
     AdminComponent,
-    NavbarComponent
+    NavbarComponent,
+    SecurityGuardComponent
   ],
   imports: [
     BrowserModule,
