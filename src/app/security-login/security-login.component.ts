@@ -19,6 +19,7 @@ constructor(private api:ApiService,private route:Router){}
     this.api.securityLogin(data).subscribe(
       (response:any)=>{
         if (response.status=="success") {
+          this.route.navigate(['/visitorlog'])
        
         } else {
           

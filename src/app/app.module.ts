@@ -10,13 +10,16 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SecurityGuardComponent } from './security-guard/security-guard.component';
 import { SecurityLoginComponent } from './security-login/security-login.component';
 import { HttpClientModule } from '@angular/common/http';
+import { VisitorLogComponent } from './visitor-log/visitor-log.component';
 const myconst:Routes=[
   {path:"",
 component:AdminComponent},
 {path:"security",
 component:SecurityGuardComponent},
 {path:"securitylogin",
-component:SecurityLoginComponent}
+component:SecurityLoginComponent},
+{path:"visitorlog",
+component:VisitorLogComponent}
 ]
 @NgModule({
   declarations: [
@@ -24,7 +27,8 @@ component:SecurityLoginComponent}
     AdminComponent,
     NavbarComponent,
     SecurityGuardComponent,
-    SecurityLoginComponent
+    SecurityLoginComponent,
+    VisitorLogComponent
   ],
   imports: [
     BrowserModule,
