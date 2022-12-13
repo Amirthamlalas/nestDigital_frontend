@@ -13,8 +13,10 @@ import { HttpClientModule } from '@angular/common/http';
 const myconst:Routes=[
   {path:"",
 component:AdminComponent},
-{path:"/security",
-component:SecurityGuardComponent}
+{path:"security",
+component:SecurityGuardComponent},
+{path:"securitylogin",
+component:SecurityLoginComponent}
 ]
 @NgModule({
   declarations: [
