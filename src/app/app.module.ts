@@ -8,23 +8,28 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SecurityGuardComponent } from './security-guard/security-guard.component';
-
+import { SecurityLoginComponent } from './security-login/security-login.component';
+import { HttpClientModule } from '@angular/common/http';
 const myconst:Routes=[
   {path:"",
-component:AdminComponent}
+component:AdminComponent},
+{path:"/security",
+component:SecurityGuardComponent}
 ]
 @NgModule({
   declarations: [
     AppComponent,
     AdminComponent,
     NavbarComponent,
-    SecurityGuardComponent
+    SecurityGuardComponent,
+    SecurityLoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(myconst)
+    RouterModule.forRoot(myconst),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

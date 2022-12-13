@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-security-guard',
@@ -7,6 +8,25 @@ import { Component } from '@angular/core';
 })
 export class SecurityGuardComponent {
 
-  
+  username=""
+  password=""
+  name=""
+  constructor(private api:ApiService){}
+  readValue=()=>{
+    let data:any={
+      "username":this.username,"password":this.password,"name":this.name
+    }
+    console.log(data)
+  this.api.addSecurity(data).subscribe(
+    (response:any)=>{
+      if (response.status=="success") {
+        alert("security guard added successfully")
+        
+      } else {
+        alert("Something went wrong")
+      }
+    }
+  )
+  }
 
 }
