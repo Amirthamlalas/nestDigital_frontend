@@ -39,5 +39,14 @@ export class ApiService {
   applyLeave=(DataToSend:any)=>{
     return this.http.post("http://localhost:8080/applyleave",DataToSend)
   }
+
+  
+  viewLeave=()=>{
+    return this.http.get("http://localhost:8080/viewallleave")
+  }
+
+  viewEmployee=()=>{
+    return this.http.get("http://localhost:8080/viewemployee")
+  }
   
 }

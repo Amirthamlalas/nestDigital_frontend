@@ -17,6 +17,8 @@ import { EmployeeLoginComponent } from './employee-login/employee-login.componen
 import { EmployeeProfileComponent } from './employee-profile/employee-profile.component';
 import { EmployeeNavbarComponent } from './employee-navbar/employee-navbar.component';
 import { LeaveApplicationComponent } from './leave-application/leave-application.component';
+import { LeaveManagementComponent } from './leave-management/leave-management.component';
+import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 const myconst:Routes=[
   {path:"",
 component:AdminComponent},
@@ -35,7 +37,11 @@ component:EmployeeLoginComponent},
 {path:"profile",
 component:EmployeeProfileComponent},
 {path:"leave",
-component:LeaveApplicationComponent}
+component:LeaveApplicationComponent},
+{path:"viewleave",
+component:LeaveManagementComponent},
+{path:"viewemployee",
+component:ViewEmployeeComponent}
 ]
 @NgModule({
   declarations: [
@@ -50,7 +56,9 @@ component:LeaveApplicationComponent}
     EmployeeLoginComponent,
     EmployeeProfileComponent,
     EmployeeNavbarComponent,
-    LeaveApplicationComponent
+    LeaveApplicationComponent,
+    LeaveManagementComponent,
+    ViewEmployeeComponent
   ],
   imports: [
     BrowserModule,
