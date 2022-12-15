@@ -1,0 +1,26 @@
+
+<app-employee-navbar></app-employee-navbar>
+
+<div style="padding-top: 100px;" class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+
+
+                    <div class="card border-info mb-3" *ngFor="let i of profile">
+                        <div class="card-header">Name : {{i.name}}</div>
+                        <div class="card-body">
+                            <p class="card-text">Employee Id : {{i.empid}}</p>
+                          <p class="card-text">Designation : {{i.designation}}</p>
+                          <p class="card-text">Email : {{i.email}}</p>
+                          <p class="card-text">Phone : {{i.phoneno}}</p>
+                          <p class="card-text">Username : {{i.username}}</p>
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

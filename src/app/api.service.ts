@@ -31,5 +31,9 @@ export class ApiService {
   employeeLogin=(DataToSend:any)=>{
     return this.http.post("http://localhost:8080/employeelogin",DataToSend)
   }
+
+  employeeProfile=(DataToSend:any)=>{
+    return this.http.post("http://localhost:8080/viewprofile",DataToSend)
+  }
   
 }

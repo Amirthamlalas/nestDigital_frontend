@@ -14,6 +14,8 @@ import { VisitorLogComponent } from './visitor-log/visitor-log.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { SearchEmployeeComponent } from './search-employee/search-employee.component';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
+import { EmployeeProfileComponent } from './employee-profile/employee-profile.component';
+import { EmployeeNavbarComponent } from './employee-navbar/employee-navbar.component';
 const myconst:Routes=[
   {path:"",
 component:AdminComponent},
@@ -28,7 +30,9 @@ component:AddEmployeeComponent},
 {path:"searchemployee",
 component:SearchEmployeeComponent},
 {path:"employeelogin",
-component:EmployeeLoginComponent}
+component:EmployeeLoginComponent},
+{path:"profile",
+component:EmployeeProfileComponent}
 ]
 @NgModule({
   declarations: [
@@ -40,7 +44,9 @@ component:EmployeeLoginComponent}
     VisitorLogComponent,
     AddEmployeeComponent,
     SearchEmployeeComponent,
-    EmployeeLoginComponent
+    EmployeeLoginComponent,
+    EmployeeProfileComponent,
+    EmployeeNavbarComponent
   ],
   imports: [
     BrowserModule,
