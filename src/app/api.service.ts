@@ -35,5 +35,9 @@ export class ApiService {
   employeeProfile=(DataToSend:any)=>{
     return this.http.post("http://localhost:8080/viewprofile",DataToSend)
   }
+
+  applyLeave=(DataToSend:any)=>{
+    return this.http.post("http://localhost:8080/applyleave",DataToSend)
+  }
   
 }

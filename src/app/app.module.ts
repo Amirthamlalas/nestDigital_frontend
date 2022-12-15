@@ -16,6 +16,7 @@ import { SearchEmployeeComponent } from './search-employee/search-employee.compo
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 import { EmployeeProfileComponent } from './employee-profile/employee-profile.component';
 import { EmployeeNavbarComponent } from './employee-navbar/employee-navbar.component';
+import { LeaveApplicationComponent } from './leave-application/leave-application.component';
 const myconst:Routes=[
   {path:"",
 component:AdminComponent},
@@ -32,7 +33,9 @@ component:SearchEmployeeComponent},
 {path:"employeelogin",
 component:EmployeeLoginComponent},
 {path:"profile",
-component:EmployeeProfileComponent}
+component:EmployeeProfileComponent},
+{path:"leave",
+component:LeaveApplicationComponent}
 ]
 @NgModule({
   declarations: [
@@ -46,7 +49,8 @@ component:EmployeeProfileComponent}
     SearchEmployeeComponent,
     EmployeeLoginComponent,
     EmployeeProfileComponent,
-    EmployeeNavbarComponent
+    EmployeeNavbarComponent,
+    LeaveApplicationComponent
   ],
   imports: [
     BrowserModule,
