@@ -27,5 +27,9 @@ export class ApiService {
   deleteEmployee=(DataToSend:any)=>{
     return this.http.post("http://localhost:8080/deleteemployee",DataToSend)
   }
+
+  employeeLogin=(DataToSend:any)=>{
+    return this.http.post("http://localhost:8080/employeelogin",DataToSend)
+  }
   
 }

@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { VisitorLogComponent } from './visitor-log/visitor-log.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { SearchEmployeeComponent } from './search-employee/search-employee.component';
+import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 const myconst:Routes=[
   {path:"",
 component:AdminComponent},
@@ -25,7 +26,9 @@ component:VisitorLogComponent},
 {path:"addemployee",
 component:AddEmployeeComponent},
 {path:"searchemployee",
-component:SearchEmployeeComponent}
+component:SearchEmployeeComponent},
+{path:"employeelogin",
+component:EmployeeLoginComponent}
 ]
 @NgModule({
   declarations: [
@@ -36,7 +39,8 @@ component:SearchEmployeeComponent}
     SecurityLoginComponent,
     VisitorLogComponent,
     AddEmployeeComponent,
-    SearchEmployeeComponent
+    SearchEmployeeComponent,
+    EmployeeLoginComponent
   ],
   imports: [
     BrowserModule,
