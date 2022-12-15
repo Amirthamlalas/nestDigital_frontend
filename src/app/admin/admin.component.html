@@ -1,22 +1,33 @@
 
 
+<style >
 
+    .bgm{ background-image:url('http://wallpaperset.com/w/full/7/5/a/545589.jpg');}
+
+</style>
+
+<div class="bgm" style="height:700px;background-repeat: no-repeat;">
 <div class="container">
     <div class="row">
-        <h1>Admin</h1>
+        <h1 style="text-align: center;color: darkblue;">Admin</h1>
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3">
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+
+                <div style="padding: 150px;" class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                  
+                    <div class="row g-3">
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Username</label>
                     <input name="username" [(ngModel)]="username" type="text" class="form-control">
                 </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Password</label>
                     <input name="password" [(ngModel)]="password" type="password" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
-                    <button (click)="readValue()" class="btn btn-success">Login</button>
+                    <button style="color: blue;" (click)="readValue()" class="btn btn-info">Login</button>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
@@ -26,8 +37,27 @@
 
                     <a routerLink="/securitylogin">Click here for Security Guard</a>
                 </div>
+
+            </div>
+
+                </div>
+
+                
+                <div style="padding-right: 100px;padding-top: 100px;" class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <img  height="350px" src="https://www.quill.com/blog/app/uploads/5-common-challenges-administrative-assistants-face-open-graph-980x512.jpg" alt="">
+                </div>
+            
+
+        
+
+
+
+
+
+
             </div>
         </div>
     </div>
 </div>
-
+</div>
