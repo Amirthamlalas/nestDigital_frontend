@@ -17,5 +17,39 @@ export class LeaveManagementComponent {
     )
   }
   data:any=[]
+  statusvalue:any={}
+  acceptValue=(dat:any)=>{
+    this.statusvalue=1;
+    let accept:any={"empid":dat,"status":this.statusvalue}
+    this.api.updateStatus(accept).subscribe(
+      (response:any)=>{
+        if (response.status=="success") {
+          console.log(response)
+          console.log(response.status)
+          alert("status value changed successfully")
+          
+        } else {
+          alert("failed")
+        }
+      }
+    )
+  }
+
+  rejectValue=(dat:any)=>{
+    this.statusvalue=-1;
+    let accept:any={"empid":dat,"status":this.statusvalue}
+    this.api.updateStatus(accept).subscribe(
+      (response:any)=>{
+        if (response.status=="success") {
+          console.log(response)
+          console.log(response.status)
+          alert("status value changed successfully")
+          
+        } else {
+          alert("failed")
+        }
+      }
+    )
+  }
 
 }
