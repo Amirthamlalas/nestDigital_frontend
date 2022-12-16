@@ -61,5 +61,8 @@ export class ApiService {
   viewEmployeelog=()=>{
     return this.http.get("http://localhost:8080/viewemployeelog")
   }
+  viewVisitorlog=()=>{
+    return this.http.get("http://localhost:8080/viewvisitorlog")
+  }
 
 }
