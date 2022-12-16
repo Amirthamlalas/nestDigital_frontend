@@ -48,5 +48,9 @@ export class ApiService {
   viewEmployee=()=>{
     return this.http.get("http://localhost:8080/viewemployee")
   }
+
+  updateStatus=(DataToSend:any)=>{
+    return this.http.post("http://localhost:8080/update",DataToSend)
+  }
   
 }
