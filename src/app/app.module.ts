@@ -21,6 +21,7 @@ import { LeaveManagementComponent } from './leave-management/leave-management.co
 import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 import { EmployeeLogComponent } from './employee-log/employee-log.component';
 import { SecurityNavbarComponent } from './security-navbar/security-navbar.component';
+import { ViewVisitorComponent } from './view-visitor/view-visitor.component';
 const myconst:Routes=[
   {path:"",
 component:AdminComponent},
@@ -45,7 +46,9 @@ component:LeaveManagementComponent},
 {path:"viewemployee",
 component:ViewEmployeeComponent},
 {path:"employeelog",
-component:EmployeeLogComponent}
+component:EmployeeLogComponent},
+{path:"viewvisitor",
+component:ViewVisitorComponent}
 ]
 @NgModule({
   declarations: [
@@ -64,7 +67,8 @@ component:EmployeeLogComponent}
     LeaveManagementComponent,
     ViewEmployeeComponent,
     EmployeeLogComponent,
-    SecurityNavbarComponent
+    SecurityNavbarComponent,
+    ViewVisitorComponent
   ],
   imports: [
     BrowserModule,
