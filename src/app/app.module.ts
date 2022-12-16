@@ -20,6 +20,7 @@ import { LeaveApplicationComponent } from './leave-application/leave-application
 import { LeaveManagementComponent } from './leave-management/leave-management.component';
 import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 import { EmployeeLogComponent } from './employee-log/employee-log.component';
+import { SecurityNavbarComponent } from './security-navbar/security-navbar.component';
 const myconst:Routes=[
   {path:"",
 component:AdminComponent},
@@ -62,7 +63,8 @@ component:EmployeeLogComponent}
     LeaveApplicationComponent,
     LeaveManagementComponent,
     ViewEmployeeComponent,
-    EmployeeLogComponent
+    EmployeeLogComponent,
+    SecurityNavbarComponent
   ],
   imports: [
     BrowserModule,
