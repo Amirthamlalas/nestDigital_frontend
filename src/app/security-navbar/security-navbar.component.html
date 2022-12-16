@@ -9,20 +9,23 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" routerLink="/visitorlog">Visitor Log</a>
           </li>
+          <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Log Details
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" routerLink="/viewvisitorlog">View Visitor Log</a></li>
+                <li><a class="dropdown-item" routerLink="/viewemployeelog">View Employee Log</a></li>
+                <li>
+                  <a class="dropdown-item"routerLink="/searchemployeelog">Search Employee</a>
+                </li>
+                <li >
+                  <a class="dropdown-item"routerLink="/searchvisitorlog">Search Visitor</a>
+                </li>
+            </ul>
+          </div>
           <li class="nav-item">
-            <a class="nav-link"routerLink="/employeelog">Employee Log</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"routerLink="/viewvisitor">View Visitors</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"routerLink="/searchemployeelog">Search Employee</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"routerLink="/searchvisitorlog">Search Visitor</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="">Log Out</a>
+            <a class="nav-link" routerLink="/">Log Out</a>
           </li>
          
         </ul>

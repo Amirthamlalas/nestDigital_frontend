@@ -24,6 +24,7 @@ import { SecurityNavbarComponent } from './security-navbar/security-navbar.compo
 import { ViewVisitorComponent } from './view-visitor/view-visitor.component';
 import { SearchEmployeeLogComponent } from './search-employee-log/search-employee-log.component';
 import { SearchVisitorLogComponent } from './search-visitor-log/search-visitor-log.component';
+import { NavbarLogComponent } from './navbar-log/navbar-log.component';
 const myconst:Routes=[
   {path:"",
 component:AdminComponent},
@@ -80,7 +81,8 @@ component:SearchVisitorLogComponent}
     SecurityNavbarComponent,
     ViewVisitorComponent,
     SearchEmployeeLogComponent,
-    SearchVisitorLogComponent
+    SearchVisitorLogComponent,
+    NavbarLogComponent
   ],
   imports: [
     BrowserModule,
