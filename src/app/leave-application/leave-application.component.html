@@ -28,6 +28,23 @@
 
                     <button (click)="readValue()" class="btn btn-success">Apply</button>
                 </div>
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <button (click)="status()" class="btn btn-success">Leave Status</button>
+                </div>
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" *ngFor="let i of statusval">
+                    <label for="" class="form_label">LeaveStatus</label>
+                    <input type="text" class="form-control"*ngIf="i.status==1;else rejected" value="Accepted" >
+
+                    <ng-template #rejected>
+                        <input type="text" class="form-control" value="Rejected">
+                      </ng-template>
+                      
+
+                   
+                </div>
             </div>
         </div>
     </div>

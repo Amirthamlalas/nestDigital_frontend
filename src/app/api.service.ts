@@ -52,5 +52,9 @@ export class ApiService {
   updateStatus=(DataToSend:any)=>{
     return this.http.post("http://localhost:8080/update",DataToSend)
   }
-  
+
+ 
+  searchStatus=(DataToSend:any)=>{
+    return this.http.post("http://localhost:8080/searchstatus",DataToSend)
+  }
 }

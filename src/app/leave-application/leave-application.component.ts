@@ -12,8 +12,24 @@ export class LeaveApplicationComponent {
   remarks=""
   from_data=""
   to_date=""
+  statusval:any=[]
+  
   constructor(private api:ApiService){
     this.empid=localStorage.getItem("empInfo")
+    
+  }
+  status=()=>{
+    let data:any={"empid":this.empid}
+    this.api.searchStatus(data).subscribe(
+      (response:any)=>{
+        
+        this.statusval=response;
+        
+        
+      }
+
+    )
+
   }
 
   readValue=()=>{

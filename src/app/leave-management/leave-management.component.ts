@@ -21,6 +21,7 @@ export class LeaveManagementComponent {
   acceptValue=(dat:any)=>{
     this.statusvalue=1;
     let accept:any={"empid":dat,"status":this.statusvalue}
+    localStorage.setItem("statusval",this.statusvalue)
     this.api.updateStatus(accept).subscribe(
       (response:any)=>{
         if (response.status=="success") {
@@ -38,6 +39,7 @@ export class LeaveManagementComponent {
   rejectValue=(dat:any)=>{
     this.statusvalue=-1;
     let accept:any={"empid":dat,"status":this.statusvalue}
+    localStorage.setItem("statusval",this.statusvalue)
     this.api.updateStatus(accept).subscribe(
       (response:any)=>{
         if (response.status=="success") {
