@@ -13,10 +13,11 @@ export class VisitorLogComponent {
   whom_to_meet=""
    entry_time=""
   exit_time=""
+  date=""
 constructor(private api:ApiService){}
   readValue=()=>{
     let data:any={
-      "name":this.name,"purpose":this.purpose,"whom_to_meet":this.whom_to_meet,"entry_time":this.entry_time,"exit_time":this.exit_time
+      "name":this.name,"purpose":this.purpose,"whom_to_meet":this.whom_to_meet,"entry_time":this.entry_time,"exit_time":this.exit_time,"date":this.date
     }
 this.api.visitorLog(data).subscribe(
   (response:any)=>{

@@ -1,0 +1,77 @@
+<app-security-navbar></app-security-navbar>
+<div class="container">
+
+    <div class="row">
+
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+
+
+            <div class="row g-3">
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+
+
+                    <label for="" class="form-label">Date</label>
+
+                    <input type="date" class="form-control" name="date" [(ngModel)]="date" >
+
+
+
+                </div>
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+
+
+                    <button (click)="readValue()" class="btn btn-success">Search</button>
+
+
+
+                </div>
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"  >
+
+
+                    <table class="table">
+                        <thead>
+                          <tr>
+                           
+                           
+                            <th scope="col">Date</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Purpose</th>
+                            <th scope="col">Whom_tO_Meet</th>
+                            <th scope="col">Entry Time</th>
+                            <th scope="col">Exit Time</th>
+                          
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let i of searchdata">
+                           
+                           
+                          
+                            <td>{{i.date}}</td>
+                            <td>{{i.name}}</td>
+                            <td>{{i.purpose}}</td>
+                            <td>{{i.whom_to_meet}}</td>
+                            <td>{{i.entry_time}}</td>
+                            <td>{{i.exit_time}}</td>
+                           
+                            
+                          </tr>
+                         
+                        </tbody>
+                      </table>
+                    
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>        
+</div>    
