@@ -13,14 +13,17 @@ export class LeaveManagementComponent {
 
       (response:any)=>{
         this.data=response;
+        
       }
     )
   }
   data:any=[]
+
   statusvalue:any={}
-  acceptValue=(dat:any)=>{
+  acceptValue=(dat:any,id:any)=>{
     this.statusvalue=1;
-    let accept:any={"empid":dat,"status":this.statusvalue}
+   
+    let accept:any={"empid":dat,"status":this.statusvalue,"id":id}
     localStorage.setItem("statusval",this.statusvalue)
     this.api.updateStatus(accept).subscribe(
       (response:any)=>{
@@ -36,9 +39,9 @@ export class LeaveManagementComponent {
     )
   }
 
-  rejectValue=(dat:any)=>{
+  rejectValue=(dat:any,id:any)=>{
     this.statusvalue=-1;
-    let accept:any={"empid":dat,"status":this.statusvalue}
+    let accept:any={"empid":dat,"status":this.statusvalue,"id":id}
     localStorage.setItem("statusval",this.statusvalue)
     this.api.updateStatus(accept).subscribe(
       (response:any)=>{

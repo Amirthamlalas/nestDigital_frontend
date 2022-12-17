@@ -29,8 +29,8 @@
                     <td>{{i.to_date}}</td>
                     <td>{{i.apply_date}}</td>
                     <td>{{i.status}}</td>
-                    <td> <button (click)="acceptValue(i.empid)" class="btn btn-success">Accept</button> </td>
-                    <td> <button (click)="rejectValue(i.empid)"class="btn btn-danger">Reject</button> </td>
+                    <td> <button (click)="acceptValue(i.empid,i.id)" class="btn btn-success">Accept</button> </td>
+                    <td> <button (click)="rejectValue(i.empid,i.id)"class="btn btn-danger">Reject</button> </td>
                   </tr>
                  
                 </tbody>
