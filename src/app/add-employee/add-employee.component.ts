@@ -26,7 +26,7 @@ constructor(private api:ApiService){}
     "salary" :this.salary,
     "username" : this.username,
   "password" : this.password}
-
+  
   this.api.addEmployee(data).subscribe(
 
   

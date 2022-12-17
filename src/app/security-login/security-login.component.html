@@ -1,27 +1,49 @@
 
 
+<style >
+
+    .bgm{ background-image:url('https://cdn.wallpapersafari.com/82/99/aogCzb.jpg');}
+
+</style>
+
+<div class="bgm" style="height:900px;background-repeat: no-repeat;">
 
 <div class="container">
     <div class="row">
-        <h1>Security Guard</h1>
+        <h1 style="color: rgb(15, 46, 15);text-align: center;padding-top: 50px;">Security Guard</h1>
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <div style="padding-top: 100px;padding-left: 450px;" class="row">
+               
+                <div style="background-color: rgb(184, 241, 182);" class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+
+
             <div class="row g-3">
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                <div style="padding-top: 100px;" class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Username</label>
                     <input name="username" [(ngModel)]="username" type="text" class="form-control">
                 </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Password</label>
                     <input name="password" [(ngModel)]="password" type="password" class="form-control">
                 </div>
+                <div style="text-align: center;" class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <button  (click)="readValue()" class="btn btn-success">Login</button>
+                </div>
+
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
-                    <button (click)="readValue()" class="btn btn-success">Login</button>
+                    <a style="color: darkgreen;" routerLink="/">Log Out</a>
                 </div>
                
             </div>
+
+            </div></div>
+
+
         </div>
     </div>
 </div>
 
-
+</div>

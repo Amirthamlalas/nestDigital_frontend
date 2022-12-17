@@ -1,14 +1,22 @@
 
 <app-employee-navbar></app-employee-navbar>
 
+<style >
+
+    .bgm{ background-image:url('https://wallpaperaccess.com/full/5112865.jpg');}
+
+</style>
+
+<div class="bgm" style="height:900px;background-repeat: no-repeat;">
+
 <div style="padding-top: 100px;" class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3">
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                <div style="padding-left: 200px;padding-top: 100px;" class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
 
 
-                    <div class="card border-info mb-3" *ngFor="let i of profile">
+                    <div  class="card border-info mb-3" *ngFor="let i of profile">
                         <div class="card-header">Name : {{i.name}}</div>
                         <div class="card-body">
                             <p class="card-text">Employee Id : {{i.empid}}</p>
