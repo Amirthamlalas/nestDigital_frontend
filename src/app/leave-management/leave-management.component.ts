@@ -36,7 +36,15 @@ export class LeaveManagementComponent {
           alert("failed")
         }
       }
-    )
+      )
+
+
+      this.api.updateCounter(dat).subscribe(
+        (response:any)=>{
+          console.log(response)
+          
+        }
+      )
   }
 
   rejectValue=(dat:any,id:any)=>{

@@ -17,8 +17,14 @@ export class EmployeeProfileComponent {
   this.api.employeeProfile(data).subscribe(
     (response:any)=>{
       this.profile=response;
+      console.log(response)
+     
+      
+      
     }
   )
   }
+
+  
 
 }

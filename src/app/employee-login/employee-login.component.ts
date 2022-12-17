@@ -20,8 +20,10 @@ this.api.employeeLogin(data).subscribe(
   (response:any)=>{
     if (response.status=="success") {
      let empid=response.employeeid
+     let empidd =response.empidd
      console.log(empid)
      localStorage.setItem("empInfo",empid)
+     localStorage.setItem("empcode",empidd)
 
       this.route.navigate(['/profile'])
     } else {
