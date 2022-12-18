@@ -75,4 +75,9 @@ export class ApiService {
   updateCounter=(DataToSend:any)=>{
     return this.http.post("http://localhost:8080/updatecounter",DataToSend)
   }
+
+
+  employeeLogout=(DataToSend:any)=>{
+    return this.http.post("http://localhost:8080/employeelogout",DataToSend)
+  }
 }

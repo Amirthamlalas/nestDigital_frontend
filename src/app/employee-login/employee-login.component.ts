@@ -11,7 +11,23 @@ export class EmployeeLoginComponent {
 
   username=""
   password=""
+  
+ id:any=""
 constructor(private api:ApiService,private route:Router){}
+
+read=()=>{
+ this.id=localStorage.getItem("empInfo")
+let data:any={"empid":this.id}
+
+this.api.employeeLogout(data).subscribe(
+  (response:any)=>{
+    console.log(response)
+  }
+)
+
+}
+
+
   readValue=()=>{
     let data:any={
       "username":this.username,"password":this.password
