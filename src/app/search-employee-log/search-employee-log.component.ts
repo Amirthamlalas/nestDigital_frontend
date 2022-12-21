@@ -17,6 +17,7 @@ readValue=()=>{
   this.api.searchEmployeelog(data).subscribe(
     (response:any)=>{
       this.searchdata=response;
+      console.log(response)
     }
   )
 

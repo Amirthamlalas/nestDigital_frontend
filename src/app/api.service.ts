@@ -72,5 +72,16 @@ export class ApiService {
     return this.http.post("http://localhost:8080/viewdailyvisitor",DataToSend)
   }
 
+  updateCounter=(DataToSend:any)=>{
+    return this.http.post("http://localhost:8080/updatecounter",DataToSend)
+  }
 
+
+  employeeLogout=(DataToSend:any)=>{
+    return this.http.post("http://localhost:8080/employeelogout",DataToSend)
+  }
+
+  viewCounter=(DataToSend:any)=>{
+    return this.http.post("http://localhost:8080/counterview",DataToSend)
+  }
 }

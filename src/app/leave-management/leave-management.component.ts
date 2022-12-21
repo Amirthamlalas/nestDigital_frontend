@@ -36,7 +36,17 @@ export class LeaveManagementComponent {
           alert("failed")
         }
       }
-    )
+      )
+
+
+      if(this.statusvalue==1){
+        let dataid:any={"empid":dat}
+      this.api.updateCounter(dataid).subscribe(
+        (response:any)=>{
+          console.log(response)
+        }
+      )
+      }
   }
 
   rejectValue=(dat:any,id:any)=>{

@@ -1,8 +1,17 @@
 
 <app-employee-navbar></app-employee-navbar>
 
+
+<style >
+
+    .bgm{ background-image:url('https://wallpaperaccess.com/full/5112865.jpg');}
+
+</style>
+
+<div class="bgm" style="height:900px;background-repeat: no-repeat;">
+
 <div class="container">
-    <div class="row">
+    <div style="background-color: rgb(179, 239, 197);" class="row">
         
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3">
@@ -24,7 +33,7 @@
                     <input name="to_date" [(ngModel)]="to_date" type="date" class="form-control">
                 </div>
                 
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <div  style="text-align: center;"class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
                     <button (click)="readValue()" class="btn btn-success">Apply</button>
                 </div>
@@ -45,11 +54,27 @@
                       </ng-template>
                      
                      
-                      
-
-                   
                 </div>
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <button (click)="counterclick()" class="btn btn-light">Remaining Leaves</button>
+                </div>
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"*ngFor ="let i of counter">
+
+                    <p>Remaining Leaves:{{i.total}}</p>
+                    <p>casual Leaves : {{i.casualleave}}</p>
+                    <p>sick Leaves : {{i.sickleave}}</p>
+                    <p>Special : {{i.specialleave}}</p>
+
+                    
+                </div>
+
+
             </div>
         </div>
     </div>
+</div>
+
 </div>

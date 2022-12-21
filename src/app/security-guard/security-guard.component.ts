@@ -21,6 +21,9 @@ export class SecurityGuardComponent {
     (response:any)=>{
       if (response.status=="success") {
         alert("security guard added successfully")
+        this.username=""
+        this.password=""
+        this.name=""
         
       } else {
         alert("Something went wrong")
