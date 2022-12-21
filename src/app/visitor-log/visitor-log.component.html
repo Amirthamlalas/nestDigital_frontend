@@ -1,5 +1,13 @@
 <app-security-navbar></app-security-navbar>
 
+<style >
+
+    .bgm{ background-image:url('http://wallpaperset.com/w/full/7/5/a/545589.jpg');}
+
+</style>
+
+<div class="bgm" style="height:700px;background-repeat: no-repeat;">
+
 <div class="container">
     <div class="row">
         
@@ -29,7 +37,7 @@
                     <label for="" class="form-label">Date</label>
                     <input name="date" [(ngModel)]="date" type="date" class="form-control">
                 </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <div style="text-align: center;" class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
                     <button (click)="readValue()" class="btn btn-success">Add</button>
                 </div>
@@ -38,3 +46,5 @@
     </div>
 </div>
 
+
+</div>

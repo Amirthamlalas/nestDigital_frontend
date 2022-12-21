@@ -80,4 +80,8 @@ export class ApiService {
   employeeLogout=(DataToSend:any)=>{
     return this.http.post("http://localhost:8080/employeelogout",DataToSend)
   }
+
+  viewCounter=(DataToSend:any)=>{
+    return this.http.post("http://localhost:8080/counterview",DataToSend)
+  }
 }

@@ -15,6 +15,7 @@ export class LeaveApplicationComponent {
   statusval:any=[]
   sta:any=""
   id:any={}
+  counter:any=[]
   constructor(private api:ApiService){
     this.id=localStorage.getItem("userid")
     
@@ -22,7 +23,7 @@ export class LeaveApplicationComponent {
   }
   
   status=()=>{
-   
+    
     let data:any={"id":this.id}
     this.api.searchStatus(data).subscribe(
       (response:any)=>{
@@ -32,9 +33,17 @@ export class LeaveApplicationComponent {
       }
 
     )
-
+   
   }
-
+counterclick=()=>{
+  this.empid=localStorage.getItem("empcode")
+  let cdata:any={"empid":this.empid}
+  this.api.viewCounter(cdata).subscribe(
+    (response:any)=>{
+      this.counter=response
+    }
+  )
+}
   readValue=()=>{
     this.empid=localStorage.getItem("empcode")
     let data:any={"leavetype":this.leavetype,"remarks":this.remarks,"from_data":this.from_data,"to_date":this.to_date,"empid":this.empid

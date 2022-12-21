@@ -22,10 +22,10 @@ constructor(private api:ApiService){}
 this.api.visitorLog(data).subscribe(
   (response:any)=>{
     if (response.status=="success") {
-      alert("working")
+      alert("Visitor added successfully")
       
     } else {
-      alert("FAIL")
+      alert("Failed to add visitor")
     }
   }
 )

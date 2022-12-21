@@ -1,6 +1,14 @@
 
 <app-navbar></app-navbar>
 
+<style >
+
+    .bgm{ background-image:url('https://wallpaperaccess.com/full/1567834.jpg');}
+
+</style>
+
+<div class="bgm" style="height:900px;background-repeat: no-repeat;">
+
 <div class="container">
     <div class="row">
         
@@ -38,12 +46,13 @@
                     <label for="" class="form-label">Password</label>
                     <input name="password" [(ngModel)]="password" type="password" class="form-control">
                 </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <div style="text-align: center;" class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
-                    <button (click)="readValue()" class="btn btn-success">Add</button>
+                    <button (click)="readValue()" class="btn btn-primary">Add</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+</div>
